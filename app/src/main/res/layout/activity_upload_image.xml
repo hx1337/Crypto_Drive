@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="25dp"
+    android:gravity="center_vertical"
+    tools:context=".UploadImage">
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/upload_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:src="@android:drawable/picture_frame" />
+
+        <LinearLayout
+            android:id="@+id/tableRow1"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/upload_selc_imgCam"
+                android:layout_width="46dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/cam" />
+
+            <ImageView
+                android:id="@+id/upload_selc_imgGal"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/gallery" />
+
+        </LinearLayout>
+    <EditText
+        android:id="@+id/upload_name"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_edittext"
+        android:fontFamily="serif-monospace"
+        android:layout_height="45dp"
+        android:hint=" Name"/>
+
+    <Button
+        android:id="@+id/upload_btn_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:text="   Upload   "
+        android:textStyle="bold" />
+
+    </LinearLayout>
+

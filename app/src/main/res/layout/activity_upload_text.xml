@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:gravity="center_vertical"
+    tools:context=".UploadText">
+
+    <EditText
+        android:background="@drawable/custom_edittext"
+        android:id="@+id/uploadtext_name"
+        android:hint="name"
+        android:paddingLeft="10dp"
+        android:fontFamily="serif-monospace"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <EditText
+        android:background="@drawable/custom_edittext"
+        android:id="@+id/uploadtext_details"
+        android:layout_marginTop="15dp"
+        android:gravity="top|left"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:hint="Enter Description..."
+        android:fontFamily="serif-monospace"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:scrollHorizontally="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:background="@drawable/custom_edittext"
+        android:id="@+id/uploadtext_key"
+        android:hint="Key"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:fontFamily="serif-monospace"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <Button
+        android:id="@+id/uploadtext_btnup"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="     Encryp and Upload     "
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

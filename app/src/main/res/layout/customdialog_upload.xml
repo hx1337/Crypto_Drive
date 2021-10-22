@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="10dp"
+        android:background="@android:color/white"
+        android:elevation="20dp"
+       >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_margin="25dp">
+     <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textColor="@color/colorAccent"
+       android:textSize="20dp"
+         android:visibility="gone"
+       android:textColorHighlight="@color/colorPrimary"
+       android:layout_marginTop="10dp"
+       android:gravity="center_horizontal"
+       android:text="Choose file "/>
+    <Button
+        android:id="@+id/cust_up_text"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textup_icon"
+        android:layout_height="100dp" />
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/cust_up_image"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/imgup_icon"
+        android:layout_height="100dp" />
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
